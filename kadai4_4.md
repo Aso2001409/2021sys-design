@@ -1,5 +1,6 @@
 ```uml
 @startuml
+start
 :weather;
 if(weather==0)then(Yes)
   :快晴です;
