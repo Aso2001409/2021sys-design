@@ -5,12 +5,12 @@
 Webサーバー -> DBサーバー :カートの中身検索
 DBサーバー - Webサーバー :検索結果
 
-alt ログイン時
- Webサーバー -> ユーザー :カート中身表示
-
-else 未ログイン
- Webサーバー -> ユーザー :メッセージを表示
-
+alt 条件分岐
+  hoge -> bar
+  bar -> hoge
+else elseの処理
+  hoge -> fuga
+  fuga -> hoge
 end
 @enduml
 ```
