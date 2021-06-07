@@ -4,11 +4,12 @@
 
 
 alt 条件分岐
-  hoge -> bar
-  bar -> hoge
+ユーザー -> Webサーバー :詳細表示
+Webサーバー -> DBサーバー :詳細検索
+DBサーバー -> Webサーバー :検索結果
+Webサーバー -> ユーザー :結果表示
 else elseの処理
-  hoge -> fuga
-  fuga -> hoge
+
 end
 @enduml
 ```
