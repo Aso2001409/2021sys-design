@@ -56,8 +56,8 @@ package "ECサイト" as target_system {
         + detail_id [PK]
         --
         # item_code [FK]
-          price
-          num
+        price
+        num
     }
 }
 
