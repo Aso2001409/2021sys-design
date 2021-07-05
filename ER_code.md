@@ -1,6 +1,7 @@
 '''uml
 @startuml
 
+
 entity "顧客マスタ" as customer <m_cystiners>{
 + customer_code[PK]
  --
