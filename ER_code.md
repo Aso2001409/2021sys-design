@@ -1,5 +1,3 @@
-'''startuml
-@startuml
 
 
 entity "顧客マスタ" as customer <m_cystiners>{
@@ -15,5 +13,4 @@ reg_date
 }
 
 
-@enduml
-'''
+
