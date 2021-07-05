@@ -34,13 +34,13 @@ package "ECサイト" as target_system {
     entity "商品マスタ" as items <m_items> <<M,MASTER_MARK_COLOR>>{
         + item_code [PK]
         --
-         item_name
-         price
+        item_name
+        price
         # category_id [FK]
-         image
-         detail
-         del_flag
-         reg_date
+        image
+        detail
+        del_flag
+        reg_date
     }
     
     entity "購入テーブル" as purchase <d_purchase> <<T,TRANSACTION_MARK_COLOR>>{
