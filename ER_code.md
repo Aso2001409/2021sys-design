@@ -61,7 +61,7 @@ package "ECサイト" as target_system {
     }
 }
 
-
+顧客マスタ |○..○{ 購入テーブル
 
 
 
