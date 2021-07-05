@@ -1,4 +1,4 @@
-'''startuml
+```uml
 @startuml
 
 entity user {
@@ -21,4 +21,4 @@ entity favorite_movie {
 user ||--|{ favorite_movie
 
 @enduml
-'''
+```
