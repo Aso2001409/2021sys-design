@@ -61,7 +61,7 @@ package "ECサイト" as target_system {
     }
 }
 
-customer |o-ri-o{  purchase
+customer |o----o{  purchase
 
 
 @enduml
