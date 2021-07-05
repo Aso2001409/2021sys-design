@@ -1,4 +1,4 @@
-'''uml
+'''puml
 @startuml
 entity "employee" {
 
