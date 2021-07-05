@@ -2,7 +2,7 @@
 @startuml
 
 
-!define MASTER_MARK_COLOR AAFFAA
+!define MASTER_MARK_COLOR Orange
 
 entity "顧客マスタ" as customer <m_customers>
 <<M,MASTER_MARK_COLOR>>{
