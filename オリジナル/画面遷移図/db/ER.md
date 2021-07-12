@@ -25,12 +25,39 @@ package "ショッピングサイト" as terget_system {
     entity "商品マスタ" as items <<M,MASTER_MARK_COLOR>>{
         + 商品ID　[PK]
         --
-        カテゴリーID 
+        カテゴリーID [FK]
         商品名
         値段
         画像
     }
+    
+    entity "カテゴリマスタ" as category <<M,MASTER_MARK_COLOR>>{
+        + カテゴリーID [PK]
+        --
+        種類名
+    }
+    
+    entity "購入テーブル" as purchase <<T,TRANSACTION_MARK_COLOR>>{
+        
 }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
