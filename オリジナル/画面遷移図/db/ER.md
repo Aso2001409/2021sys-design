@@ -22,7 +22,7 @@ package "ショッピングサイト" as terget_system {
         メール
     }
     
-    entity "商品マスタ" as items <<M<MASTER_MARK_COLOR>>{
+    entity "商品マスタ" as items <<M,MASTER_MARK_COLOR>>{
         + 商品ID　[PK]
         --
         カテゴリーID 
