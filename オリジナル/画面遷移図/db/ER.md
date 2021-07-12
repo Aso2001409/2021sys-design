@@ -13,7 +13,7 @@ skinparam class {
 
 package "ショッピングサイト" as terget_system {
     entity "顧客マスタ" as customer <<M,MASTER_MARK_COLOR>>{
-        + customer_ID [PK]
+        + customer_id [PK]
         --
         pass
         name
@@ -37,7 +37,7 @@ package "ショッピングサイト" as terget_system {
     }
     
     entity "カテゴリマスタ" as category <<M,MASTER_MARK_COLOR>>{
-        + category_ID [PK]
+        + category_id [PK]
         --
         category_name
         reg_date
