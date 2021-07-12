@@ -13,32 +13,51 @@ skinparam class {
 
 package "ショッピングサイト" as terget_system {
     entity "顧客マスタ" as customer <<M,MASTER_MARK_COLOR>>{
-        + 顧客ID [PK]
+        + customer_ID [PK]
         --
-        パスワード
-        名前
-        住所
-        電話
-        メール
+        pass
+        name
+        address
+        tel
+        mail
+        del_flag
+        reg_date
     }
     
     entity "商品マスタ" as items <<M,MASTER_MARK_COLOR>>{
-        + 商品ID　[PK]
+        + items_id　[PK]
         --
-        カテゴリーID [FK]
-        商品名
-        値段
-        画像
+        category_id [FK]
+        item_name
+        price
+        image
+        detail
+        del_flag
+        reg_date
     }
     
     entity "カテゴリマスタ" as category <<M,MASTER_MARK_COLOR>>{
-        + カテゴリーID [PK]
+        + category_ID [PK]
         --
-        種類名
+        category_name
+        reg_date
     }
     
     entity "購入テーブル" as purchase <<T,TRANSACTION_MARK_COLOR>>{
-        
+        + order_id [PK]
+        --
+        customer_id
+        purchase_deta
+        total_price
+    }
+    
+    entity "購入詳細テーブル" as purchase_detail <<T,TRANSACTION_MARK_COLOR>>{
+        + detail_id
+        + order_id
+        --
+        price
+        num
+    }
 }
     
     
