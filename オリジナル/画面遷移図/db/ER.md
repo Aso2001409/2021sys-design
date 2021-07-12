@@ -46,14 +46,14 @@ package "ショッピングサイト" as terget_system {
     entity "購入テーブル" as purchase <<T,TRANSACTION_MARK_COLOR>>{
         + order_id [PK]
         --
-        customer_id
+        customer_id [FK]
         purchase_deta
         total_price
     }
     
     entity "購入詳細テーブル" as purchase_detail <<T,TRANSACTION_MARK_COLOR>>{
-        + detail_id
-        + order_id
+        + detail_id [PK]
+        + order_id [PK]
         --
         price
         num
