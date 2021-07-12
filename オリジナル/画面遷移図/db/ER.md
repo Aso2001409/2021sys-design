@@ -60,7 +60,14 @@ package "ショッピングサイト" as terget_system {
     }
 }
     
-    
+customer |o-o{  purchase
+purchase ||-|{ purchase_detail
+purchase_detail }--|| items
+category ||-o{ items
+
+@enduml
+```
+
     
     
     
