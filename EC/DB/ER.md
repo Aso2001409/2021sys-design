@@ -17,8 +17,8 @@ package "ショッピングサイト" as terget_system {
         --
         pass
         name
+        postal code
         address
-        tel
         mail
         del_flag
         reg_date
@@ -36,10 +36,10 @@ package "ショッピングサイト" as terget_system {
         reg_date
     }
     
-    entity "カテゴリマスタ" as category <<M,MASTER_MARK_COLOR>>{
+    entity "メーカーマスタ" as category <<M,MASTER_MARK_COLOR>>{
         + category_id [PK]
         --
-        category_name
+        manufacturer_name
         reg_date
     }
     
