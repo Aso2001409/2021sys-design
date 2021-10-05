@@ -27,7 +27,7 @@ package "ショッピングサイト" as terget_system {
     entity "商品マスタ" as items <<M,MASTER_MARK_COLOR>>{
         + items_id　[PK]
         --
-        # category_id [FK]
+        # manufacturer_id [FK]
         item_name
         price
         image
@@ -36,8 +36,8 @@ package "ショッピングサイト" as terget_system {
         reg_date
     }
     
-    entity "メーカーマスタ" as category <<M,MASTER_MARK_COLOR>>{
-        + category_id [PK]
+    entity "メーカーマスタ" as manufacturer <<M,MASTER_MARK_COLOR>>{
+        + manufacturer_id [PK]
         --
         manufacturer_name
         reg_date
@@ -64,7 +64,7 @@ package "ショッピングサイト" as terget_system {
 customer |o-o{  purchase
 purchase ||-|{ purchase_detail
 purchase_detail }--|| items
-category ||-o{ items
+manufacturer ||-o{ items
 
 @enduml
 ```
