@@ -20,7 +20,6 @@ package "ショッピングサイト" as terget_system {
         postal code
         address
         mail
-        del_flag
         reg_date
     }
     
@@ -32,7 +31,6 @@ package "ショッピングサイト" as terget_system {
         price
         image
         detail
-        del_flag
         reg_date
     }
     
