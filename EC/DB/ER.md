@@ -21,6 +21,7 @@ package "ショッピングサイト" as terget_system {
         address
         mail
         reg_date
+        del_flag
     }
     
     entity "商品マスタ" as items <<M,MASTER_MARK_COLOR>>{
@@ -32,6 +33,7 @@ package "ショッピングサイト" as terget_system {
         image
         detail
         reg_date
+        del_flag
     }
     
     entity "メーカーマスタ" as manufacturer <<M,MASTER_MARK_COLOR>>{
@@ -47,13 +49,16 @@ package "ショッピングサイト" as terget_system {
        #  customer_id [FK]
         purchase_deta
         total_price
+        delivery_address
+        payment
+        delivery_date
     }
     
     entity "購入詳細テーブル" as purchase_detail <<T,TRANSACTION_MARK_COLOR>>{
         + detail_id [PK]
-        + order_id [PK]
         --
-        # items_id [FF]
+        + order_id [FK]
+        # items_id [FK]
         price
         num
     }
