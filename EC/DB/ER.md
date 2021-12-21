@@ -60,6 +60,7 @@ package "ショッピングサイト" as terget_system {
         # order_id [FK]
         # items_id [FK]
         num
+        detail_price
     }
 }
     
